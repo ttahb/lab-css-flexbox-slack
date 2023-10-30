@@ -13,26 +13,25 @@ html {
     font-size: 10px;
 }
 
+body {
+    overflow: hidden;
+}
+
 /* Iteration-1 - Mobile Version */
 @media (max-width: 650px) {
-    
-    nav, header {
-        /* background-image: url("../images/background-singup.png");
-        background-repeat: no-repeat; */
-    }
 
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 150vw;
+        width: 100vw;
         height: 15vh;
         background-color: #540B51;
     }
 
     nav > div > img {
         width: 13rem;
-        margin-left: 2rem;
+        margin-left: 3rem;
         margin-right: 0;
     }
     
@@ -45,23 +44,98 @@ html {
     }
 
     #nav-button {
-       width: 60vw;
+       width: 25vw;
        display: flex;
        align-items: center;
-       margin-right: 20vw;
-       margin-left:2vw;
+       justify-content: flex-end;
+       margin-right: 10vw;
     }
 
     #nav-button > button {
         background-color: #540B51;
         border: none;
         width: 5rem;
+        margin-left: 1rem;
     }
 
     #nav-button img {
         width: 3.25rem;
         margin-right: 3rem;
         
+    }
+
+    header {
+        background-color: #540B51;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 10vw;
+        text-align: center;
+        margin: 2rem auto 4rem;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    header p {
+        font-size: 4.5vw;
+        text-align: center;
+        color: #fff;
+        margin: auto auto 3.5rem;
+    }
+
+    #slack-is-free-text {
+        color: #ECB12F;
+    }
+
+    header div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 75vh;
+    }
+
+    header > div > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 90vw;
+        height: 12vh;
+        font-size: 3.5vw;
+        text-transform: uppercase;
+        text-align: center;
+        color: #540B51;
+        font-weight: 500;
+    }
+
+    #gmail {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #4285F4;
+        margin-top: 2rem;
+    }
+
+    #gmail img {
+        width: 9.5vw;
+        background-color: #fff;
+    }
+
+    #gmail span {
+        color: #fff;
+        margin-left: 15vw;
+    }
+
+    header > div > img {
+        width: 160vw;
+        margin-left: 40vh;
     }
 }
 
