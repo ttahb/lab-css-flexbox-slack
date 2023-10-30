@@ -8,3 +8,84 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+html {
+    font-size: 10px;
+}
+
+/* Iteration-1 - Mobile Version */
+@media (max-width: 650px) {
+    
+    nav, header {
+        /* background-image: url("../images/background-singup.png");
+        background-repeat: no-repeat; */
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 150vw;
+        height: 15vh;
+        background-color: #540B51;
+    }
+
+    nav > div > img {
+        width: 13rem;
+        margin-left: 2rem;
+        margin-right: 0;
+    }
+    
+    #nav-links {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+
+    #nav-button {
+       width: 60vw;
+       display: flex;
+       align-items: center;
+       margin-right: 20vw;
+       margin-left:2vw;
+    }
+
+    #nav-button > button {
+        background-color: #540B51;
+        border: none;
+        width: 5rem;
+    }
+
+    #nav-button img {
+        width: 3.25rem;
+        margin-right: 3rem;
+        
+    }
+}
+
+
+/* Iteration-2 - Tablet Version */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Iteration-3 - Medium Screen Version */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    #nav-links {
+        display: block;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+}
+
+
+/* Bonus: Iteration-4 - Large screen */
+
+@media (min-width: 1441px) {
+    
+}
+
